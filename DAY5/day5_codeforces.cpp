@@ -12,13 +12,13 @@ int main(){
         cin >> s;
 
         if(s == "++x"){
-            x = ++x;
+            ++x;
         } else if(s == "x++"){
-            x = ++x;
+            x++;
         } else if(s == "--x"){
-            x = --x;
+            --x;
         } else if(s == "x--"){
-            x = x--;
+            x--;
         }
     } 
 
