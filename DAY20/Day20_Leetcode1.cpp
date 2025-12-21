@@ -5,13 +5,13 @@ public:
         result += numBottles;
 
         int temp = numBottles;
-        while(temp != 0){
+        while(temp >= numExchange){
             int qout = (temp/numExchange);
 
             int rem = temp % numExchange;
 
-            result += (qout+rem);
-            temp = qout;
+            result += qout;
+            temp = qout+rem;
     
         }
         return result;
